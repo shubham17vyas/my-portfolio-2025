@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Github, Linkedin, Mail, ArrowRight } from 'lucide-react';
@@ -136,12 +135,12 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-semibold">LinkedIn</h4>
                   <a 
-                    href="https://www.linkedin.com/in/shubham-vyas-3b5218128/" 
+                    href="https://www.linkedin.com/in/shubham-vyas-0812a6133/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-white/70 hover:text-white transition-colors"
                   >
-                    linkedin.com/in/shubham-vyas-3b5218128
+                    linkedin.com/in/shubham-vyas-0812a6133
                   </a>
                 </div>
               </div>
