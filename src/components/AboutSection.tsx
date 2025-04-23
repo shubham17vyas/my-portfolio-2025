@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -45,27 +46,35 @@ const AboutSection = () => {
             isVisible && "opacity-100 translate-y-0"
           )}>
             <p className="text-lg text-white/80">
-              I'm a passionate Software Developer with expertise in algorithms, RF engineering, trading strategies, and 
-              full-stack development. My journey in tech began with a curiosity about how things work, and it has evolved 
-              into a career building elegant solutions to complex problems.
+              I'm a passionate Software Developer with extensive experience in RF engineering, software development, 
+              and system optimization. Currently at C Squared Systems, LLC, I specialize in RF analysis, wireless coverage solutions,
+              and developing sophisticated monitoring systems.
             </p>
             
             <p className="text-lg text-white/80">
-              I believe that good software is a blend of technical excellence and creative problem-solving. 
-              My experience spans across various domains, allowing me to approach challenges from multiple perspectives.
+              My expertise spans across RF engineering, software development, and system architecture. I've contributed 
+              to projects involving DAS systems, Wi-Fi networks, and remote monitoring solutions, with a focus on delivering
+              high-quality, efficient systems.
             </p>
             
             <p className="text-lg text-white/80">
-              When I'm not coding, I enjoy exploring new technologies, optimizing trading algorithms, and 
-              diving deeper into RF engineering principles. I'm always looking to expand my knowledge and skills.
+              When I'm not coding, I enjoy exploring new technologies and finding innovative solutions to complex
+              engineering challenges. I'm passionate about creating systems that deliver "All Signal, No Noise."
             </p>
             
-            <div className="pt-4">
+            <div className="pt-4 space-y-4">
               <h3 className="text-xl font-bold mb-3">Education</h3>
+              
               <div className="glass-card p-4 rounded-lg">
-                <p className="font-semibold">Bachelor of Engineering in Electronics and Communication</p>
-                <p className="text-white/70">Government Engineering College, Gandhinagar</p>
-                <p className="text-sm text-white/60">2017 - 2021</p>
+                <p className="font-semibold">Master of Science (M.S.) in Management Information Systems</p>
+                <p className="text-white/70">Utah State University - Jon M. Huntsman School of Business</p>
+                <p className="text-sm text-white/60">2015 - 2016</p>
+              </div>
+              
+              <div className="glass-card p-4 rounded-lg">
+                <p className="font-semibold">Bachelor of Engineering in Computer Science</p>
+                <p className="text-white/70">Rajiv Gandhi Prodyogiki Vishwavidyalaya</p>
+                <p className="text-sm text-white/60">2010 - 2014</p>
               </div>
             </div>
           </div>

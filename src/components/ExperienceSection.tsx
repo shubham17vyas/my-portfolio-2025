@@ -41,40 +41,42 @@ const ExperienceSection = () => {
   
   const experiences: Experience[] = [
     {
-      title: "Senior Software Developer",
-      company: "Tech Innovations Inc.",
-      period: "2021 - Present",
+      title: "Software Developer",
+      company: "C Squared Systems, LLC",
+      period: "April 2017 - Present",
       description: [
-        "Led development of high-performance algorithmic trading systems",
-        "Designed and implemented RF signal processing algorithms",
-        "Mentored junior developers and established best practices",
-        "Improved system performance by 40% through optimization"
+        "Lead development of RF engineering and wireless coverage solutions",
+        "Develop and maintain SitePortal® web-based software for remote monitoring",
+        "Design and implement DAS systems and Wi-Fi networks",
+        "Provide technical expertise in complex multi-vendor environments",
+        "Execute turnkey in-building wireless solutions with state-of-the-art analysis tools"
       ],
-      technologies: ["Python", "C++", "React", "AWS", "Trading Algorithms"]
+      technologies: ["RF Engineering", "Software Development", "DAS Systems", "Wi-Fi Networks", "Remote Monitoring"]
     },
     {
-      title: "RF Engineer",
-      company: "Wireless Solutions Ltd.",
-      period: "2019 - 2021",
+      title: "Software Developer Intern",
+      company: "RentalOnMe.com",
+      period: "February 2016 - May 2016",
       description: [
-        "Developed wireless communication protocols for IoT devices",
-        "Created simulation models for RF circuit design",
-        "Collaborated with cross-functional teams to optimize system performance",
-        "Authored technical documentation and research papers"
+        "Wrote clean, well-designed code for assigned projects",
+        "Produced detailed specifications and conducted thorough testing",
+        "Maintained core product software and databases for optimization",
+        "Contributed to all phases of the software development lifecycle",
+        "Developed and deployed new features following industry best practices"
       ],
-      technologies: ["RF Circuit Design", "Signal Processing", "Embedded C", "MATLAB"]
+      technologies: ["Software Development", "Database Management", "Testing", "Feature Development"]
     },
     {
-      title: "Software Engineer",
-      company: "Global Tech Corp",
-      period: "2017 - 2019",
+      title: "Junior Software Engineer",
+      company: "MOBRNA SOFTWARE PRIVATE LIMITED",
+      period: "January 2013 - December 2013",
       description: [
-        "Built responsive web applications with modern JavaScript frameworks",
-        "Implemented backend services and RESTful APIs",
-        "Participated in agile development cycles and sprint planning",
-        "Integrated third-party services and payment gateways"
+        "Designed and developed user interfaces",
+        "Customized systems and tested computer programs",
+        "Provided production support",
+        "Worked with front-end technologies and frameworks"
       ],
-      technologies: ["JavaScript", "Node.js", "React", "MongoDB", "Docker"]
+      technologies: ["HTML", "CSS", "JavaScript", "jQuery", "AngularJS"]
     }
   ];
   
