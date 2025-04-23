@@ -52,7 +52,7 @@ const ContactSection = () => {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('/api/send-contact-email', {
+      const response = await fetch('https://<your-project>.supabase.co/functions/v1/send-telegram-message', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -79,7 +79,6 @@ const ContactSection = () => {
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
 
-      // Reset success message after 5 seconds
       setTimeout(() => {
         setSubmitSuccess(false);
       }, 5000);
