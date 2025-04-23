@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -64,9 +63,9 @@ const AboutSection = () => {
             <div className="pt-4">
               <h3 className="text-xl font-bold mb-3">Education</h3>
               <div className="glass-card p-4 rounded-lg">
-                <p className="font-semibold">B.Tech in Electronics and Communication</p>
-                <p className="text-white/70">Indian Institute of Technology</p>
-                <p className="text-sm text-white/60">2015 - 2019</p>
+                <p className="font-semibold">Bachelor of Engineering in Electronics and Communication</p>
+                <p className="text-white/70">Government Engineering College, Gandhinagar</p>
+                <p className="text-sm text-white/60">2017 - 2021</p>
               </div>
             </div>
           </div>
