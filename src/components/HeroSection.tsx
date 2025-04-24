@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
@@ -80,10 +79,50 @@ const HeroSection = () => {
               >
                 {showDescription && (
                   <TypewriterText
-                    text="Passionate about algorithms, RF engineering, trading strategies, and full-stack development. Building elegant solutions to complex problems."
+                    text="Passionate about "
                     delay={30}
-                    onComplete={() => setShowButtons(true)}
                   />
+                )}
+                {showDescription && (
+                  <>
+                    <TypewriterText
+                      text="algorithms"
+                      className="text-cyberpunk-neon font-semibold animate-pulse-glow"
+                      delay={30}
+                    />
+                    <TypewriterText
+                      text=", "
+                      delay={30}
+                    />
+                    <TypewriterText
+                      text="full-stack development"
+                      className="text-cyberpunk-pink font-semibold animate-pulse-glow"
+                      delay={30}
+                    />
+                    <TypewriterText
+                      text=", RF engineering, and trading strategies. Building "
+                      delay={30}
+                    />
+                    <TypewriterText
+                      text="elegant"
+                      className="text-cyberpunk-blue font-semibold animate-pulse-glow"
+                      delay={30}
+                    />
+                    <TypewriterText
+                      text=" solutions to "
+                      delay={30}
+                    />
+                    <TypewriterText
+                      text="complex"
+                      className="text-cyberpunk-purple font-semibold animate-pulse-glow"
+                      delay={30}
+                    />
+                    <TypewriterText
+                      text=" problems."
+                      delay={30}
+                      onComplete={() => setShowButtons(true)}
+                    />
+                  </>
                 )}
               </p>
               
