@@ -19,8 +19,8 @@ const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 relative overflow-hidden">
       {/* Background decorations */}
-      <div className="absolute top-1/3 left-1/4 w-64 h-64 rounded-full bg-cyberpunk-purple/20 blur-[100px]"></div>
-      <div className="absolute bottom-1/4 right-1/3 w-80 h-80 rounded-full bg-cyberpunk-blue/20 blur-[100px]"></div>
+      <div className="absolute top-1/3 left-1/4 w-64 h-64 rounded-full bg-cyberpunk-purple/10 blur-[100px]"></div>
+      <div className="absolute bottom-1/4 right-1/3 w-80 h-80 rounded-full bg-cyberpunk-blue/10 blur-[100px]"></div>
       
       <div className="section-container">
         <div className="grid md:grid-cols-5 gap-8 items-center">
@@ -35,7 +35,7 @@ const HeroSection = () => {
                 {loaded && (
                   <TypewriterText
                     text="Software Developer"
-                    className="text-sm md:text-base font-semibold text-cyberpunk-neon inline-block py-1 px-4 rounded-full border border-cyberpunk-neon/50 animate-pulse-glow"
+                    className="text-sm md:text-base font-semibold text-cyberpunk-neon inline-block py-1 px-4 rounded-full border border-cyberpunk-neon/30"
                     onComplete={() => setShowRole(true)}
                   />
                 )}
@@ -58,7 +58,7 @@ const HeroSection = () => {
                       <>
                         <TypewriterText
                           text="Shubham"
-                          className="text-cyberpunk-neon animate-pulse-glow"
+                          className="text-cyberpunk-neon"
                           delay={70}
                           onComplete={() => setShowDescription(true)}
                         />
@@ -88,7 +88,7 @@ const HeroSection = () => {
                   <>
                     <TypewriterText
                       text="algorithms"
-                      className="text-cyberpunk-neon font-semibold animate-pulse-glow"
+                      className="text-cyberpunk-neon font-medium"
                       delay={30}
                     />
                     <TypewriterText
@@ -97,7 +97,7 @@ const HeroSection = () => {
                     />
                     <TypewriterText
                       text="full-stack development"
-                      className="text-cyberpunk-pink font-semibold animate-pulse-glow"
+                      className="text-cyberpunk-pink font-medium"
                       delay={30}
                     />
                     <TypewriterText
@@ -106,7 +106,7 @@ const HeroSection = () => {
                     />
                     <TypewriterText
                       text="elegant"
-                      className="text-cyberpunk-blue font-semibold animate-pulse-glow"
+                      className="text-cyberpunk-blue font-medium"
                       delay={30}
                     />
                     <TypewriterText
@@ -115,7 +115,7 @@ const HeroSection = () => {
                     />
                     <TypewriterText
                       text="complex"
-                      className="text-cyberpunk-purple font-semibold animate-pulse-glow"
+                      className="text-cyberpunk-purple font-medium"
                       delay={30}
                     />
                     <TypewriterText
@@ -135,11 +135,11 @@ const HeroSection = () => {
               >
                 {showButtons && (
                   <>
-                    <a href="#projects" className="btn-primary flex items-center gap-2 animate-pulse-glow">
+                    <a href="#projects" className="btn-primary flex items-center gap-2">
                       View My Projects
                       <ArrowRight size={18} />
                     </a>
-                    <a href="#about" className="btn-outline animate-pulse-glow">
+                    <a href="#about" className="btn-outline">
                       About Me
                     </a>
                   </>
@@ -206,9 +206,9 @@ const HeroSection = () => {
               </div>
               
               {/* Decorative elements */}
-              <div className="absolute top-4 -right-4 w-full h-full border-2 border-cyberpunk-neon/50 rounded-2xl"></div>
+              <div className="absolute top-4 -right-4 w-full h-full border-2 border-cyberpunk-neon/30 rounded-2xl"></div>
               
-              <div className="absolute -bottom-4 -left-4 w-24 h-24 border border-cyberpunk-pink/50 rounded-xl"></div>
+              <div className="absolute -bottom-4 -left-4 w-24 h-24 border border-cyberpunk-pink/30 rounded-xl"></div>
             </div>
           </div>
         </div>
