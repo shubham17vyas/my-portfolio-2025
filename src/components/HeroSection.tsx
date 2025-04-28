@@ -19,8 +19,8 @@ const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 relative overflow-hidden">
       {/* Background decorations */}
-      <div className="absolute top-1/3 left-1/4 w-64 h-64 rounded-full bg-cyberpunk-purple/10 blur-[100px]"></div>
-      <div className="absolute bottom-1/4 right-1/3 w-80 h-80 rounded-full bg-cyberpunk-blue/10 blur-[100px]"></div>
+      <div className="absolute top-1/3 left-1/4 w-64 h-64 rounded-full bg-cyberpunk-purple/20 blur-[100px]"></div>
+      <div className="absolute bottom-1/4 right-1/3 w-80 h-80 rounded-full bg-cyberpunk-blue/20 blur-[100px]"></div>
       
       <div className="section-container">
         <div className="grid md:grid-cols-5 gap-8 items-center">
@@ -29,13 +29,13 @@ const HeroSection = () => {
               <div 
                 className={cn(
                   "transition-all duration-1000 opacity-0 translate-y-10",
-                  loaded && "opacity-100 translate-y-0 animate-bounce-in"
+                  loaded && "opacity-100 translate-y-0"
                 )}
               >
                 {loaded && (
                   <TypewriterText
                     text="Software Developer"
-                    className="text-sm md:text-base font-semibold text-cyberpunk-neon inline-block py-1 px-4 rounded-full border border-cyberpunk-neon/30"
+                    className="text-sm md:text-base font-semibold text-cyberpunk-neon inline-block py-1 px-4 rounded-full border border-cyberpunk-neon/50"
                     onComplete={() => setShowRole(true)}
                   />
                 )}
@@ -44,7 +44,7 @@ const HeroSection = () => {
               <h1 
                 className={cn(
                   "text-4xl md:text-6xl lg:text-7xl font-bold transition-all duration-1000 delay-100 opacity-0 translate-y-10",
-                  loaded && "opacity-100 translate-y-0 animate-bounce-in"
+                  loaded && "opacity-100 translate-y-0"
                 )}
               >
                 {showRole && (
@@ -75,71 +75,31 @@ const HeroSection = () => {
               <p 
                 className={cn(
                   "text-lg md:text-xl text-white/80 max-w-2xl transition-all duration-1000 delay-200 opacity-0 translate-y-10",
-                  showDescription && "opacity-100 translate-y-0 animate-bounce-in"
+                  showDescription && "opacity-100 translate-y-0"
                 )}
               >
                 {showDescription && (
                   <TypewriterText
-                    text="Passionate about "
+                    text="Passionate about algorithms, RF engineering, trading strategies, and full-stack development. Building elegant solutions to complex problems."
                     delay={30}
+                    onComplete={() => setShowButtons(true)}
                   />
-                )}
-                {showDescription && (
-                  <>
-                    <TypewriterText
-                      text="algorithms"
-                      className="text-cyberpunk-neon font-medium"
-                      delay={30}
-                    />
-                    <TypewriterText
-                      text=", "
-                      delay={30}
-                    />
-                    <TypewriterText
-                      text="full-stack development"
-                      className="text-cyberpunk-pink font-medium"
-                      delay={30}
-                    />
-                    <TypewriterText
-                      text=", and trading strategies. Building "
-                      delay={30}
-                    />
-                    <TypewriterText
-                      text="elegant"
-                      className="text-cyberpunk-blue font-medium"
-                      delay={30}
-                    />
-                    <TypewriterText
-                      text=" solutions to "
-                      delay={30}
-                    />
-                    <TypewriterText
-                      text="complex"
-                      className="text-cyberpunk-purple font-medium"
-                      delay={30}
-                    />
-                    <TypewriterText
-                      text=" problems."
-                      delay={30}
-                      onComplete={() => setShowButtons(true)}
-                    />
-                  </>
                 )}
               </p>
               
               <div 
                 className={cn(
                   "flex flex-wrap gap-4 transition-all duration-1000 delay-300 opacity-0 translate-y-10",
-                  showButtons && "opacity-100 translate-y-0 animate-bounce-in"
+                  showButtons && "opacity-100 translate-y-0"
                 )}
               >
                 {showButtons && (
                   <>
-                    <a href="#projects" className="btn-primary flex items-center gap-2">
+                    <a href="#projects" className="btn-primary flex items-center gap-2 animate-pulse">
                       View My Projects
                       <ArrowRight size={18} />
                     </a>
-                    <a href="#about" className="btn-outline">
+                    <a href="#about" className="btn-outline animate-pulse">
                       About Me
                     </a>
                   </>
@@ -149,7 +109,7 @@ const HeroSection = () => {
               <div 
                 className={cn(
                   "flex items-center gap-6 pt-4 transition-all duration-1000 delay-400 opacity-0 translate-y-10",
-                  showButtons && "opacity-100 translate-y-0 animate-bounce-in"
+                  showButtons && "opacity-100 translate-y-0"
                 )}
               >
                 {showButtons && (
@@ -185,7 +145,7 @@ const HeroSection = () => {
           <div 
             className={cn(
               "md:col-span-2 transition-all duration-1000 delay-500 opacity-0 translate-y-10",
-              loaded && "opacity-100 translate-y-0 animate-bounce-in"
+              loaded && "opacity-100 translate-y-0"
             )}
           >
             <div className="relative">
@@ -199,16 +159,16 @@ const HeroSection = () => {
                 <div className="p-6 flex flex-col h-full justify-end relative z-10">
                   <div className="space-y-2">
                     <div className="h-1 w-12 bg-cyberpunk-neon rounded-full"></div>
-                    <p className="text-sm text-white/70">Software Development</p>
+                    <p className="text-sm text-white/70">Software Development • RF Engineering</p>
                     <p className="text-sm text-white/70">Algorithms • Trading Strategies</p>
                   </div>
                 </div>
               </div>
               
               {/* Decorative elements */}
-              <div className="absolute top-4 -right-4 w-full h-full border-2 border-cyberpunk-neon/30 rounded-2xl"></div>
+              <div className="absolute top-4 -right-4 w-full h-full border-2 border-cyberpunk-neon/50 rounded-2xl"></div>
               
-              <div className="absolute -bottom-4 -left-4 w-24 h-24 border border-cyberpunk-pink/30 rounded-xl"></div>
+              <div className="absolute -bottom-4 -left-4 w-24 h-24 border border-cyberpunk-pink/50 rounded-xl"></div>
             </div>
           </div>
         </div>
