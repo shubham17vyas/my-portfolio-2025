@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
@@ -100,7 +101,7 @@ const HeroSection = () => {
                       delay={30}
                     />
                     <TypewriterText
-                      text=", RF engineering, and trading strategies. Building "
+                      text=", and trading strategies. Building "
                       delay={30}
                     />
                     <TypewriterText
@@ -198,7 +199,7 @@ const HeroSection = () => {
                 <div className="p-6 flex flex-col h-full justify-end relative z-10">
                   <div className="space-y-2">
                     <div className="h-1 w-12 bg-cyberpunk-neon rounded-full"></div>
-                    <p className="text-sm text-white/70">Software Development • RF Engineering</p>
+                    <p className="text-sm text-white/70">Software Development</p>
                     <p className="text-sm text-white/70">Algorithms • Trading Strategies</p>
                   </div>
                 </div>

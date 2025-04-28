@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
@@ -45,13 +44,13 @@ const ExperienceSection = () => {
       company: "C Squared Systems, LLC",
       period: "April 2017 - Present",
       description: [
-        "Lead development of RF engineering and wireless coverage solutions",
+        "Lead development of software for internal tools and systems",
         "Develop and maintain SitePortal® web-based software for remote monitoring",
-        "Design and implement DAS systems and Wi-Fi networks",
+        "Create software solutions for company's RF engineering business",
         "Provide technical expertise in complex multi-vendor environments",
-        "Execute turnkey in-building wireless solutions with state-of-the-art analysis tools"
+        "Build and optimize software applications to support business operations"
       ],
-      technologies: ["RF Engineering", "Software Development", "DAS Systems", "Wi-Fi Networks", "Remote Monitoring"]
+      technologies: ["Software Development", "Web Applications", "Database Management", "Remote Monitoring", "Business Intelligence"]
     },
     {
       title: "Software Developer Intern",
