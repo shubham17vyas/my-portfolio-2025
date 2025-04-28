@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -110,6 +109,20 @@ export default {
 				'rotate-slow': {
 					'0%': { transform: 'rotate(0deg)' },
 					'100%': { transform: 'rotate(360deg)' }
+				},
+				'bounce-in': {
+					'0%': { 
+						opacity: '0', 
+						transform: 'scale(0.5)',
+					},
+					'70%': { 
+						opacity: '0.7', 
+						transform: 'scale(1.1)',
+					},
+					'100%': { 
+						opacity: '1', 
+						transform: 'scale(1)',
+					},
 				}
 			},
 			animation: {
@@ -119,7 +132,8 @@ export default {
 				'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
 				'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
 				'shimmer': 'shimmer 2s infinite linear',
-				'rotate-slow': 'rotate-slow 12s linear infinite'
+				'rotate-slow': 'rotate-slow 12s linear infinite',
+				'bounce-in': 'bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards',
 			},
 			backdropFilter: {
 				'none': 'none',
